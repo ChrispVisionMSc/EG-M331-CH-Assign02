@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
-//This script modifies the XRSocketInteractor component to override the IXRHoverInteractable & IXRSelectInteractable
+//503403 - This script modifies the XRSocketInteractor component to override the IXRHoverInteractable & IXRSelectInteractable
 //functions of the component if the interactable object offered to the XR Socket has incorrect tag. CH Jan 2024
 public class XRSocketTagInteractor : XRSocketInteractor
 {

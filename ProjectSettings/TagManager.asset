@@ -14,9 +14,9 @@ TagManager:
   - ChickenSternum
   - ChickenSkull
   - RaptorSternum
-  - RaptorVertebra
   - RaptorClaw
   - RaptorPelvis
+  - RaptorTibia
   layers:
   - Default
   - TransparentFX
