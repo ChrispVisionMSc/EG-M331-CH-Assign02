@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BoneCounter : MonoBehaviour
 
@@ -14,6 +15,7 @@ public class BoneCounter : MonoBehaviour
     public int counter;
     public GameObject skeleton;
     public GameObject liveModel;
+    public TMPro.TextMeshPro boneCount;
 
 
     // Start is called before the first frame update
@@ -25,7 +27,10 @@ public class BoneCounter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-     if (counter == maxBones)
+
+        boneCount.text = counter + " of 4 Bones".ToString();
+
+        if (counter == maxBones)
         {
             skeleton.SetActive(false);
             liveModel.SetActive(true);
@@ -35,14 +40,19 @@ public class BoneCounter : MonoBehaviour
     public void counterIncrement() 
     { 
     counter++;
+        
         Debug.Log("counter = " + counter);
+        //boneCount.text = " " + counter + " of 4 Bones".ToString();
     }
 
     public void counterDecrement()
     {
         counter--;
         Debug.Log("counter = " + counter);
+        //boneCount.text = " " + counter + " of 4 Bones".ToString();
     }
+
+
 
 
 
